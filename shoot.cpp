@@ -22,7 +22,7 @@ void deplacement()
 {
 	if (Keyboard::isKeyPressed(Keyboard::Left))
 	{
-		//  square.setPosition(x-2, y)
+		//  square.setPosition(j-2, i)
 	}
 
 	if (Keyboard::isKeyPressed(Keyboard::Right))
