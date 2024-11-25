@@ -12,7 +12,7 @@ RenderWindow window(VideoMode(800, 600), "Fenêtre shoot em up SFML ");
 
 RectangleShape square(vector2f(40.f, 40.f))
 square.setFillColor(Color Orange)
-square.setPosition(Vector2f(400.f, 200.f))
+square.setPosition(Vector2f(400.f, 200.f)) // x et y a definir avant ?
 
 
 
@@ -22,28 +22,39 @@ void deplacement()
 {
 	if (Keyboard::isKeyPressed(Keyboard::Left))
 	{
-		// x -= 2
+		//  square.setPosition(x-2, y)
 	}
 
 	if (Keyboard::isKeyPressed(Keyboard::Right))
 	{
-		// x += 2
+		//  square.setPosition(x+2, y)
 	}
 
 	if (Keyboard::isKeyPressed(Keyboard::Down))
 	{
-		// y -= 2
+		//   square.setPosition(x, y-2)
 	}
 
 	if (Keyboard::isKeyPressed(Keyboard::Up))
 	{
-		// y += 2
+		// square.setPosition(x, y+2)
 	}
 }
 
-
 int main()
 {
+	// faire spawn des astéroides aleatoirement 
+	bool exit = false;
+
+	while (!exit)
+	{
+		RectangleShape square(vector2f(40.f, 40.f))
+		square.setFillColor(Color Black)
+		square.setPosition(Vector2f(x aleatoire, y aleatoire)
+
+			// square mouvement et vitesse
+	}
+
 	return 0;
 }
 
