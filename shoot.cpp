@@ -3,13 +3,41 @@ using namespace sf;
 #include<iostream>
 using namespace std;
 
-// shoot em up : PROJET
+class Plane
+{
+private:
+	bool type;
+	int x, y;
 
-// création du shooter + destructeur ( class? )
+public:
+	
+	Plane(int v) : x(v), y(v) {}
 
-// déplacement
+	~Plane()
+	{
+		cout << " un avion a ete detruit " << endl;
+	}
 
-// création des ennemis + destructeur : descendent ( si ligne soous laquelle mort auto ou deux modes?) ou immobile
+	// dÃ©placement
+	void deplacement()
+	{
+		if (Keyboard::isKeyPressed(Keyboard::Left))
+		{
+			// x += 2
+		}
+
+		if (Keyboard::isKeyPressed(Keyboard::Right))
+		{
+			// x -= 2
+		}
+	}
+};
+
+
+int main()
+{
+	return 0;
+}
+// crÃ©ation des ennemis + destructeur : descendent ( si ligne soous laquelle mort auto ou deux modes?) ou immobile
 
 // collisions ( verif de boum )
-
